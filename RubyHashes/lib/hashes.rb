@@ -22,18 +22,39 @@ end
 # Part II
    def array2d_2_hash contact_info, contacts
     # YOUR CODE HERE
-    index = 0
-    contacts.each do |key, value|
-          if !contact_info.include[]
-              return contacts
-          else
+          if !contact_info.include?([])
+              contactinf = contacts.key
+              contactinf.each do |key, value|
+              index = 0
           contacts[key] = {email: contac_inf[index][0], phone: contact_info[index][1]}
           index+=1
           end
-   end
-      return contact_info
+          
+          end
+      return contacts
    end
 # Part III
-def hash_2_array contacts
+    def hash_2_array contacts
     # YOUR CODE HERE
-end
+       index=0;
+       value = contacts.keys
+       phoneNumber = array.new
+        emailAddress = array.new
+       if emails.length == 0
+        return contacts
+       else
+        
+        value.each do|i|
+        hash = contacts|i|
+        phoneNumber[index] = hash[:phone]
+        emailAddress[index] = hash[:email]
+        index = index+1
+         end
+        index2=0
+     while index2 < value.length 
+      value[index2] = value[index2].id2name
+     end
+      contact_info = [emailAddress, phoneNumber, value]
+      return contact_info
+       end
+    end
