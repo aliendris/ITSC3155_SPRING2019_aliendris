@@ -15,25 +15,14 @@ def starts_with_consonant? s
   else 
     return false
   end 
-
-  # if(s[0].match arraychar) 
-  #   return true
-  # else
-  #   return nil
-   
-  # end
-  # YOUR CODE HERE
-#   unless (s.empty?)
-#   return nil
-# else
-#   arrychar = s[0]
-#   
-#   end
-    
-#   end
 end
 
 # Part III
 def binary_multiple_of_4? s
+  if(s =~ /(.{4})data(.{4})([\10]+)/n)
+    return true
+  else 
+    return false
+  end
   # YOUR CODE HERE
 end
