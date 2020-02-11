@@ -20,11 +20,6 @@ end
 
 # Part III
 def binary_multiple_of_4? s
-<<<<<<< HEAD
-=======
-  # YOUR CODE HERE
-  def binary_multiple_of_4? s
->>>>>>> 7b9ad63e5d8333e35812cfb23428d0c4b0b27277
   if(s == ("0"))
     return true
   end
@@ -35,9 +30,6 @@ def binary_multiple_of_4? s
   else
     return false
   end
-<<<<<<< HEAD
   
   # YOUR CODE HERE
-=======
->>>>>>> 7b9ad63e5d8333e35812cfb23428d0c4b0b27277
 end
