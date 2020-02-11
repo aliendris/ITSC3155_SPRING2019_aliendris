@@ -8,9 +8,10 @@ end
 
 # Part II
 def starts_with_consonant? s
+  # YOUR CODE HERE
   # /^[AaEeIiOoUu]/i.match(s) = nil
   arraychar = s[0]
-  if (arraychar =~ /[bcdfghjklmnpqrstvwxyz]+/i)
+  if (arraychar =~ /[`palindrome]+/i)
     return true
   else 
     return false
@@ -19,10 +20,16 @@ end
 
 # Part III
 def binary_multiple_of_4? s
-  if(s =~ /(.{4})data(.{4})([\10]+)/n)
+  if(s == ("0"))
     return true
-  else 
+  end
+  if (s =~ (/[^0-1]/))
+       return false
+  elsif (s =~ (/^[10]*00$/))
+    return true
+  else
     return false
   end
+  
   # YOUR CODE HERE
 end
