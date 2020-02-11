@@ -11,7 +11,7 @@ def starts_with_consonant? s
   # YOUR CODE HERE
   # /^[AaEeIiOoUu]/i.match(s) = nil
   arraychar = s[0]
-  if (arraychar =~ /[bcdfghjklmnpqrstvwxyz]+/i)
+  if (arraychar =~ /[`palindrome]+/i)
     return true
   else 
     return false
