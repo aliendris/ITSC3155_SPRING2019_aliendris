@@ -19,4 +19,5 @@ class BookInStock
          "$%.2f"%price
      end
   
-end
+end   
+
